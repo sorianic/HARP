@@ -1,0 +1,90 @@
+[
+  {
+    "date": "2026-09-03",
+    "scenario": "RA-001",
+    "competency": "Situational Awareness",
+    "score": 94,
+    "difficulty": 1.0,
+    "critical_error": false
+  },
+  {
+    "date": "2026-09-03",
+    "scenario": "RA-001",
+    "competency": "Remote Assistance",
+    "score": 92,
+    "difficulty": 1.0,
+    "critical_error": false
+  },
+  {
+    "date": "2026-08-28",
+    "scenario": "RA-006",
+    "competency": "Escalation",
+    "score": 91,
+    "difficulty": 1.1,
+    "critical_error": false
+  },
+  {
+    "date": "2026-08-28",
+    "scenario": "RA-006",
+    "competency": "Situational Awareness",
+    "score": 95,
+    "difficulty": 1.1,
+    "critical_error": false
+  },
+  {
+    "date": "2026-08-24",
+    "scenario": "RA-010",
+    "competency": "Human Factors",
+    "score": 90,
+    "difficulty": 1.2,
+    "critical_error": false
+  },
+  {
+    "date": "2026-08-20",
+    "scenario": "RA-005",
+    "competency": "System Fundamentals",
+    "score": 93,
+    "difficulty": 1.1,
+    "critical_error": false
+  },
+  {
+    "date": "2026-08-19",
+    "scenario": "RA-007",
+    "competency": "Remote Assistance",
+    "score": 90,
+    "difficulty": 0.9,
+    "critical_error": false
+  },
+  {
+    "date": "2026-08-15",
+    "scenario": "RA-008",
+    "competency": "Incident Documentation",
+    "score": 88,
+    "difficulty": 1.2,
+    "critical_error": false
+  },
+  {
+    "date": "2026-08-10",
+    "scenario": "RA-004",
+    "competency": "Communication",
+    "score": 94,
+    "difficulty": 1.2,
+    "critical_error": false
+  },
+  {
+    "date": "2026-05-31",
+    "scenario": "RA-004",
+    "competency": "Emergency Response",
+    "score": 91,
+    "difficulty": 1.2,
+    "critical_error": false
+  },
+  {
+    "date": "2026-05-20",
+    "scenario": "RA-008",
+    "competency": "Emergency Response",
+    "score": 88,
+    "difficulty": 1.2,
+    "critical_error": false
+  }
+]

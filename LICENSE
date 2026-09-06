@@ -1,0 +1,33 @@
+HARP PORTFOLIO LICENSE
+Version 1.0
+
+Copyright (c) 2026 Nicholas Soria. All rights reserved.
+
+HARP (Human-Autonomy Readiness Protocol), including its original documentation,
+concept framing, written materials, scenario designs, interface materials, and
+source code in this repository, is provided publicly for portfolio,
+demonstration, evaluation, and educational review purposes.
+
+You may:
+- view and run the software for personal evaluation;
+- reference or link to the public repository; and
+- discuss the ideas presented in the project with appropriate attribution.
+
+You may not, without prior written permission from the copyright holder:
+- sell, sublicense, redistribute, or commercially exploit the project or
+  substantial portions of it;
+- represent HARP or derivative materials as your own original work;
+- use the HARP name, branding, documentation, scenarios, or source code in a
+  commercial product or service; or
+- imply endorsement, certification, regulatory approval, or affiliation.
+
+THE PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. HARP IS A FICTIONAL PORTFOLIO/RESEARCH PROTOTYPE. IT IS NOT A
+VALIDATED SAFETY SYSTEM, HUMAN-PERFORMANCE MODEL, VEHICLE-CONTROL SYSTEM,
+REGULATORY STANDARD, OR PROFESSIONAL SAFETY CERTIFICATION.
+
+This license does not grant rights to third-party trademarks or intellectual
+property that may be referenced for descriptive purposes.
+
+For permissions beyond this license, contact the copyright holder through the
+public repository.

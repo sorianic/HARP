@@ -1,0 +1,49 @@
+{
+  "id": "RA-001",
+  "title": "Ambiguous Construction Flagger",
+  "system": "AV-017",
+  "state": "STOPPED",
+  "confidence": 61,
+  "severity": "MODERATE",
+  "event": "Temporary traffic control detected. A construction worker is providing a hand signal inconsistent with the expected traffic pattern.",
+  "context": "Forward view confirms an active work zone and lane shift. The flagger's gesture remains ambiguous; no immediate rear hazard exists.",
+  "competencies": [
+    "Situational Awareness",
+    "Remote Assistance",
+    "Human Factors"
+  ],
+  "actions": {
+    "hold": {
+      "score": 92,
+      "class": "acceptable",
+      "feedback": "Safe state maintained while ambiguity remained unresolved.",
+      "impact": {
+        "Situational Awareness": 1.0,
+        "Remote Assistance": 0.7
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Additional context acquired. Reassess before acting."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 94,
+      "class": "acceptable",
+      "feedback": "Context gathered before authorized guidance.",
+      "impact": {
+        "Situational Awareness": 1.2,
+        "Remote Assistance": 1.0
+      }
+    },
+    "escalate": {
+      "score": 89,
+      "class": "acceptable",
+      "feedback": "Unresolved ambiguity escalated while safe state was maintained.",
+      "impact": {
+        "Escalation": 0.8,
+        "Situational Awareness": 0.6
+      }
+    }
+  }
+}

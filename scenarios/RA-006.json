@@ -1,0 +1,47 @@
+{
+  "id": "RA-006",
+  "title": "Conflicting Police Direction",
+  "system": "AV-013",
+  "state": "STOPPED",
+  "confidence": 57,
+  "severity": "HIGH",
+  "event": "A law-enforcement officer is directing traffic contrary to normal signal indications.",
+  "context": "Officer is clearly identifiable and actively controlling the intersection. Signal remains red for the vehicle's lane.",
+  "competencies": [
+    "Situational Awareness",
+    "Remote Assistance",
+    "Escalation"
+  ],
+  "actions": {
+    "hold": {
+      "score": 87,
+      "class": "acceptable",
+      "feedback": "Vehicle remained stopped while conflicting control information was unresolved.",
+      "impact": {
+        "Situational Awareness": 0.5
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Authority and intersection context reviewed."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 91,
+      "class": "acceptable",
+      "feedback": "Decision made only after reviewing the conflicting control context.",
+      "impact": {
+        "Situational Awareness": 0.8,
+        "Remote Assistance": 0.7
+      }
+    },
+    "escalate": {
+      "score": 94,
+      "class": "acceptable",
+      "feedback": "Conflicting external direction appropriately escalated.",
+      "impact": {
+        "Escalation": 0.8
+      }
+    }
+  }
+}

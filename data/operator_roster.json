@@ -1,0 +1,206 @@
+[
+  {
+    "id": "OP-101",
+    "name": "Maya Chen",
+    "role": "RA Operator",
+    "shift": "Alpha",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 94,
+      "Situational Awareness": 96,
+      "Remote Assistance": 95,
+      "Escalation": 92,
+      "Emergency Response": 88,
+      "Communication": 94,
+      "Incident Documentation": 91,
+      "Human Factors": 90
+    }
+  },
+  {
+    "id": "OP-102",
+    "name": "Jordan Reed",
+    "role": "RA Operator",
+    "shift": "Alpha",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 91,
+      "Situational Awareness": 93,
+      "Remote Assistance": 90,
+      "Escalation": 87,
+      "Emergency Response": 68,
+      "Communication": 92,
+      "Incident Documentation": 86,
+      "Human Factors": 84
+    }
+  },
+  {
+    "id": "OP-103",
+    "name": "Elena Torres",
+    "role": "RA Operator",
+    "shift": "Alpha",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 90,
+      "Situational Awareness": 91,
+      "Remote Assistance": 92,
+      "Escalation": 89,
+      "Emergency Response": 74,
+      "Communication": 88,
+      "Incident Documentation": 90,
+      "Human Factors": 87
+    }
+  },
+  {
+    "id": "OP-104",
+    "name": "Sam Patel",
+    "role": "RA Operator",
+    "shift": "Alpha",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 93,
+      "Situational Awareness": 95,
+      "Remote Assistance": 94,
+      "Escalation": 91,
+      "Emergency Response": 82,
+      "Communication": 93,
+      "Incident Documentation": 89,
+      "Human Factors": 91
+    }
+  },
+  {
+    "id": "OP-105",
+    "name": "Alex Morgan",
+    "role": "RA Operator",
+    "shift": "Alpha",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 88,
+      "Situational Awareness": 90,
+      "Remote Assistance": 86,
+      "Escalation": 72,
+      "Emergency Response": 61,
+      "Communication": 87,
+      "Incident Documentation": 83,
+      "Human Factors": 79
+    }
+  },
+  {
+    "id": "OP-106",
+    "name": "Taylor Brooks",
+    "role": "RA Operator",
+    "shift": "Alpha",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 92,
+      "Situational Awareness": 94,
+      "Remote Assistance": 93,
+      "Escalation": 90,
+      "Emergency Response": 86,
+      "Communication": 91,
+      "Incident Documentation": 88,
+      "Human Factors": 89
+    }
+  },
+  {
+    "id": "OP-107",
+    "name": "Riley Kim",
+    "role": "RA Operator",
+    "shift": "Bravo",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 95,
+      "Situational Awareness": 96,
+      "Remote Assistance": 94,
+      "Escalation": 93,
+      "Emergency Response": 91,
+      "Communication": 95,
+      "Incident Documentation": 92,
+      "Human Factors": 93
+    }
+  },
+  {
+    "id": "OP-108",
+    "name": "Chris Allen",
+    "role": "RA Operator",
+    "shift": "Bravo",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 89,
+      "Situational Awareness": 91,
+      "Remote Assistance": 88,
+      "Escalation": 84,
+      "Emergency Response": 71,
+      "Communication": 90,
+      "Incident Documentation": 85,
+      "Human Factors": 82
+    }
+  },
+  {
+    "id": "OP-109",
+    "name": "Morgan Lee",
+    "role": "RA Operator",
+    "shift": "Bravo",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 91,
+      "Situational Awareness": 92,
+      "Remote Assistance": 90,
+      "Escalation": 88,
+      "Emergency Response": 77,
+      "Communication": 89,
+      "Incident Documentation": 87,
+      "Human Factors": 86
+    }
+  },
+  {
+    "id": "OP-110",
+    "name": "Jamie Davis",
+    "role": "RA Operator",
+    "shift": "Bravo",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 87,
+      "Situational Awareness": 89,
+      "Remote Assistance": 85,
+      "Escalation": 69,
+      "Emergency Response": 58,
+      "Communication": 86,
+      "Incident Documentation": 82,
+      "Human Factors": 76
+    }
+  },
+  {
+    "id": "OP-111",
+    "name": "Casey Wright",
+    "role": "RA Operator",
+    "shift": "Bravo",
+    "qualified": true,
+    "readiness": {
+      "System Fundamentals": 94,
+      "Situational Awareness": 93,
+      "Remote Assistance": 92,
+      "Escalation": 90,
+      "Emergency Response": 84,
+      "Communication": 92,
+      "Incident Documentation": 90,
+      "Human Factors": 88
+    }
+  },
+  {
+    "id": "OP-112",
+    "name": "Drew Wilson",
+    "role": "RA Operator",
+    "shift": "Bravo",
+    "qualified": false,
+    "readiness": {
+      "System Fundamentals": 84,
+      "Situational Awareness": 86,
+      "Remote Assistance": 82,
+      "Escalation": 73,
+      "Emergency Response": 55,
+      "Communication": 83,
+      "Incident Documentation": 78,
+      "Human Factors": 75
+    }
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "id": "RA-010",
+  "title": "Incomplete Information",
+  "system": "AV-015",
+  "state": "STOPPED",
+  "confidence": 39,
+  "severity": "HIGH",
+  "event": "The system requests assistance, but the initial event package lacks enough context to identify the hazard.",
+  "context": "Additional views reveal conflicting cues; uncertainty remains material. A confident operational resolution is not supported.",
+  "competencies": [
+    "Human Factors",
+    "Situational Awareness",
+    "Escalation"
+  ],
+  "actions": {
+    "hold": {
+      "score": 93,
+      "class": "acceptable",
+      "feedback": "Safe state maintained because available information did not support action.",
+      "impact": {
+        "Human Factors": 0.8,
+        "Situational Awareness": 0.7
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Additional context acquired, but material uncertainty remains. Do not manufacture certainty."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 25,
+      "class": "critical",
+      "feedback": "Critical error: action taken despite unresolved material uncertainty.",
+      "impact": {
+        "Human Factors": -2,
+        "Situational Awareness": -1.5
+      }
+    },
+    "escalate": {
+      "score": 97,
+      "class": "acceptable",
+      "feedback": "Unresolvable uncertainty appropriately escalated while safe state was maintained.",
+      "impact": {
+        "Escalation": 1.0,
+        "Human Factors": 0.8
+      }
+    }
+  }
+}

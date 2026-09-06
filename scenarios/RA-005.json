@@ -1,0 +1,49 @@
+{
+  "id": "RA-005",
+  "title": "Network Degradation",
+  "system": "AV-006",
+  "state": "HOLDING",
+  "confidence": 69,
+  "severity": "HIGH",
+  "event": "Remote-assistance communication latency has increased during an active request.",
+  "context": "Round-trip latency is unstable and exceeds the fictional operational threshold. Vehicle remains holding.",
+  "competencies": [
+    "System Fundamentals",
+    "Human Factors",
+    "Escalation"
+  ],
+  "actions": {
+    "hold": {
+      "score": 90,
+      "class": "acceptable",
+      "feedback": "Safe state maintained while communications were unreliable.",
+      "impact": {
+        "Human Factors": 0.6,
+        "System Fundamentals": 0.5
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Latency trend confirmed above the fictional operating threshold."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 38,
+      "class": "critical",
+      "feedback": "Critical error: guidance issued across degraded communications beyond the scenario threshold.",
+      "impact": {
+        "System Fundamentals": -1.5,
+        "Human Factors": -1
+      }
+    },
+    "escalate": {
+      "score": 96,
+      "class": "acceptable",
+      "feedback": "Communications degradation escalated while the system remained holding.",
+      "impact": {
+        "Escalation": 0.9,
+        "System Fundamentals": 0.7
+      }
+    }
+  }
+}

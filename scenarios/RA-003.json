@@ -1,0 +1,47 @@
+{
+  "id": "RA-003",
+  "title": "Sensor Obstruction",
+  "system": "AV-011",
+  "state": "MINIMAL RISK",
+  "confidence": 48,
+  "severity": "MODERATE",
+  "event": "Environmental debris is partially obstructing a forward perception sensor and system confidence is falling.",
+  "context": "Redundant sensing remains available, but confidence continues trending downward. The system has entered a minimal-risk condition.",
+  "competencies": [
+    "System Fundamentals",
+    "Remote Assistance",
+    "Escalation"
+  ],
+  "actions": {
+    "hold": {
+      "score": 88,
+      "class": "acceptable",
+      "feedback": "Minimal-risk state preserved pending technical resolution.",
+      "impact": {
+        "System Fundamentals": 0.5
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Redundant sensor status and confidence trend reviewed."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 78,
+      "class": "watch",
+      "feedback": "Guidance stayed bounded, but technical escalation is preferred as confidence degrades.",
+      "impact": {
+        "Remote Assistance": 0.2
+      }
+    },
+    "escalate": {
+      "score": 95,
+      "class": "acceptable",
+      "feedback": "Degraded sensing appropriately escalated while minimal-risk state was maintained.",
+      "impact": {
+        "System Fundamentals": 0.8,
+        "Escalation": 0.8
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "RA-007",
+  "title": "Blocked Roadway",
+  "system": "AV-002",
+  "state": "STOPPED",
+  "confidence": 82,
+  "severity": "LOW",
+  "event": "Unexpected obstruction fully blocks the planned route.",
+  "context": "No safe path through the obstruction is visible. Alternate routing is available to the autonomy stack.",
+  "competencies": [
+    "Remote Assistance",
+    "Situational Awareness"
+  ],
+  "actions": {
+    "hold": {
+      "score": 85,
+      "class": "acceptable",
+      "feedback": "Safe stop maintained while route options remained unresolved.",
+      "impact": {
+        "Remote Assistance": 0.4
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Obstruction and alternate-routing availability confirmed."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 95,
+      "class": "acceptable",
+      "feedback": "Bounded assistance provided after route context was confirmed.",
+      "impact": {
+        "Remote Assistance": 1.0,
+        "Situational Awareness": 0.5
+      }
+    },
+    "escalate": {
+      "score": 75,
+      "class": "watch",
+      "feedback": "Escalation is safe but unnecessary given available bounded resolution.",
+      "impact": {
+        "Escalation": 0.1
+      }
+    }
+  }
+}

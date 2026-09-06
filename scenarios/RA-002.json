@@ -1,0 +1,48 @@
+{
+  "id": "RA-002",
+  "title": "Emergency Vehicle Approach",
+  "system": "AV-004",
+  "state": "STOPPED",
+  "confidence": 74,
+  "severity": "HIGH",
+  "event": "Emergency vehicle approaching from the rear while the autonomous vehicle is stopped near an intersection.",
+  "context": "Audio classification indicates siren. Rear view confirms an emergency vehicle closing rapidly. Vehicle remains in a safe stopped state.",
+  "competencies": [
+    "Emergency Response",
+    "Situational Awareness",
+    "Escalation"
+  ],
+  "actions": {
+    "hold": {
+      "score": 72,
+      "class": "watch",
+      "feedback": "Safe state maintained, but emergency-response coordination was delayed.",
+      "impact": {
+        "Emergency Response": -0.3
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Emergency vehicle confirmed. Determine required response."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 83,
+      "class": "acceptable",
+      "feedback": "Authorized guidance provided after confirming emergency context.",
+      "impact": {
+        "Emergency Response": 0.5,
+        "Situational Awareness": 0.4
+      }
+    },
+    "escalate": {
+      "score": 96,
+      "class": "acceptable",
+      "feedback": "Emergency event promptly escalated through the defined response path.",
+      "impact": {
+        "Emergency Response": 1.2,
+        "Escalation": 1.0
+      }
+    }
+  }
+}

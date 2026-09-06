@@ -1,0 +1,50 @@
+{
+  "version": "0.1",
+  "as_of": "2026-09-05",
+  "description": "Prototype evidence-based readiness model. Scores are illustrative, configurable, and not validated for production safety decisions.",
+  "competencies": {
+    "System Fundamentals": {
+      "criticality": 0.85,
+      "target_interval_days": 120
+    },
+    "Situational Awareness": {
+      "criticality": 1.0,
+      "target_interval_days": 60
+    },
+    "Remote Assistance": {
+      "criticality": 1.0,
+      "target_interval_days": 60
+    },
+    "Escalation": {
+      "criticality": 1.05,
+      "target_interval_days": 75
+    },
+    "Emergency Response": {
+      "criticality": 1.2,
+      "target_interval_days": 60
+    },
+    "Communication": {
+      "criticality": 0.9,
+      "target_interval_days": 90
+    },
+    "Incident Documentation": {
+      "criticality": 0.8,
+      "target_interval_days": 120
+    },
+    "Human Factors": {
+      "criticality": 1.05,
+      "target_interval_days": 75
+    }
+  },
+  "weights": {
+    "performance": 0.55,
+    "recency": 0.3,
+    "coverage": 0.15
+  },
+  "critical_error_penalty": 8,
+  "status_thresholds": {
+    "ready": 85,
+    "watch": 70,
+    "requalification_recommended": 55
+  }
+}

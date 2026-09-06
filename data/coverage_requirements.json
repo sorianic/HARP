@@ -1,0 +1,10 @@
+{
+  "shift_requirements": {
+    "minimum_qualified_operators": 5,
+    "minimum_emergency_ready": 3,
+    "minimum_escalation_ready": 4,
+    "ready_threshold": 85,
+    "watch_threshold": 70
+  },
+  "note": "Illustrative prototype staffing requirements only; not based on any real operator or company procedure."
+}

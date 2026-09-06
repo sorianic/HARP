@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HARP // Autonomous Operations Center</title><link rel="stylesheet" href="styles.css"></head><body>
+<div style="padding:10px 28px;border-bottom:1px solid #233640;font:12px system-ui"><a href="../index.html" style="color:#6fd3c6;text-decoration:none">← HARP HOME</a></div><header><div><strong>HARP</strong> <span>// AUTONOMOUS OPERATIONS CENTER</span></div><div class="badge">BUILD 002 · SCENARIO ENGINE</div></header>
+<main>
+<section class="topgrid"><div class="card"><div class="label">ACTIVE FLEET</div><div class="big">20</div><div class="stats"><span>17 NOMINAL</span><span>2 MONITORING</span><span class="warn">1 ASSISTANCE</span></div></div>
+<div class="card"><div class="label">SYSTEM READINESS</div><div class="big">96%</div><div class="meter"><i style="width:96%"></i></div></div>
+<div class="card"><div class="label">OPERATOR READINESS</div><div id="overall" class="big">87%</div><div class="meter"><i id="overallMeter"></i></div></div></section>
+<section class="workspace"><div class="card event"><div class="row"><div id="scenarioNo" class="eyebrow"></div><div id="progress" class="label"></div></div>
+<h1 id="system"></h1><div class="meta"><span id="state"></span><span id="confidence"></span><span id="severity"></span></div>
+<div class="scene"><div class="gridlines"></div><div class="node n1"></div><div class="node n2"></div><div class="vehicle">ACTIVE SYSTEM</div><div class="zone">EVENT ZONE</div></div>
+<h2 id="title"></h2><p id="event"></p><div id="competencies" class="eyebrow"></div>
+<div id="context" class="context hidden"><strong>ADDITIONAL CONTEXT</strong><p id="contextText"></p></div>
+<div class="actions"><button data-action="hold">HOLD / MAINTAIN SAFE STATE</button><button data-action="context">REQUEST ADDITIONAL CONTEXT</button><button data-action="guidance">PROVIDE AUTHORIZED GUIDANCE</button><button data-action="escalate">ESCALATE</button></div>
+<div id="result" class="result"></div><div class="nav"><button id="next">NEXT SCENARIO →</button><button id="reset">RESET SESSION</button></div></div>
+<aside><div class="card"><div class="label">COMPETENCY PROFILE</div><div id="skills"></div></div>
+<div class="card recommendation"><div class="label">LOWEST READINESS SIGNAL</div><div id="signal"></div></div>
+<div id="explain" class="card explain hidden"><div class="row"><div class="label">WHY THIS SCORE?</div><button id="closeExplain" class="close">×</button></div><h3 id="explainTitle"></h3><div id="explainBody"></div></div>
+<div class="card"><div class="label">SESSION AAR</div><div id="history"></div></div>
+<div class="card"><div class="label">QUALIFICATION</div><div class="qual"><span>REMOTE ASSISTANCE OPERATOR</span><strong>QUALIFIED</strong></div><small>Qualification and current readiness are intentionally separate.</small></div></aside></section></main>
+<footer>FICTIONAL PROTOTYPE · NOT A VEHICLE CONTROL SYSTEM · ALL SCENARIOS AND PROCEDURES ARE SYNTHETIC</footer></body><script src="readiness.js"></script><script src="app.js"></script></html>

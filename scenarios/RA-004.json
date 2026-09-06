@@ -1,0 +1,48 @@
+{
+  "id": "RA-004",
+  "title": "Passenger Medical Event",
+  "system": "AV-019",
+  "state": "STOPPED",
+  "confidence": 93,
+  "severity": "CRITICAL",
+  "event": "Passenger reports severe chest pain and requests immediate help.",
+  "context": "Vehicle is safely stopped. Passenger remains responsive. Location and emergency-access information are available.",
+  "competencies": [
+    "Emergency Response",
+    "Communication",
+    "Escalation"
+  ],
+  "actions": {
+    "hold": {
+      "score": 35,
+      "class": "critical",
+      "feedback": "Critical error: safe stop alone does not satisfy the defined emergency-response requirement.",
+      "impact": {
+        "Emergency Response": -2
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Passenger condition and location context confirmed. Emergency action is required."
+    },
+    "guidance": {
+      "requires_context": false,
+      "score": 40,
+      "class": "critical",
+      "feedback": "Critical error: routine operational guidance is inappropriate for a medical emergency.",
+      "impact": {
+        "Emergency Response": -2
+      }
+    },
+    "escalate": {
+      "score": 98,
+      "class": "acceptable",
+      "feedback": "Medical emergency immediately escalated through the emergency-response path.",
+      "impact": {
+        "Emergency Response": 1.5,
+        "Escalation": 1.0,
+        "Communication": 0.7
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "RA-008",
+  "title": "Post-Collision Response",
+  "system": "AV-020",
+  "state": "STOPPED",
+  "confidence": 88,
+  "severity": "CRITICAL",
+  "event": "System reports a possible low-speed collision with another vehicle.",
+  "context": "Vehicle is stopped. Collision signal is confirmed. No immediate secondary hazard is detected; occupant status is not yet established.",
+  "competencies": [
+    "Emergency Response",
+    "Escalation",
+    "Communication",
+    "Incident Documentation"
+  ],
+  "actions": {
+    "hold": {
+      "score": 45,
+      "class": "critical",
+      "feedback": "Critical error: holding alone fails to initiate the defined post-collision response.",
+      "impact": {
+        "Emergency Response": -1.5
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Collision confirmation and immediate scene context reviewed."
+    },
+    "guidance": {
+      "requires_context": false,
+      "score": 30,
+      "class": "critical",
+      "feedback": "Critical error: routine guidance is inappropriate before post-collision response actions.",
+      "impact": {
+        "Emergency Response": -2
+      }
+    },
+    "escalate": {
+      "score": 99,
+      "class": "acceptable",
+      "feedback": "Post-collision event immediately escalated for emergency and incident-response coordination.",
+      "impact": {
+        "Emergency Response": 1.4,
+        "Escalation": 1.2,
+        "Incident Documentation": 0.6
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "RA-009",
+  "title": "Vulnerable Road User",
+  "system": "AV-009",
+  "state": "YIELDING",
+  "confidence": 66,
+  "severity": "HIGH",
+  "event": "Cyclist behavior near the intended path is unusual and difficult to predict.",
+  "context": "Cyclist is weaving near the lane boundary. The autonomous system is yielding and has not committed to movement.",
+  "competencies": [
+    "Situational Awareness",
+    "Human Factors",
+    "Remote Assistance"
+  ],
+  "actions": {
+    "hold": {
+      "score": 95,
+      "class": "acceptable",
+      "feedback": "Conservative safe state maintained around unpredictable vulnerable-road-user behavior.",
+      "impact": {
+        "Situational Awareness": 0.9,
+        "Human Factors": 0.7
+      }
+    },
+    "context": {
+      "continue": true,
+      "feedback": "Additional trajectory and scene context reviewed."
+    },
+    "guidance": {
+      "requires_context": true,
+      "score": 80,
+      "class": "watch",
+      "feedback": "Guidance remained bounded, though continued yielding offered the stronger safety margin.",
+      "impact": {
+        "Remote Assistance": 0.2
+      }
+    },
+    "escalate": {
+      "score": 82,
+      "class": "acceptable",
+      "feedback": "Escalation is acceptable if uncertainty cannot be resolved.",
+      "impact": {
+        "Escalation": 0.3
+      }
+    }
+  }
+}
