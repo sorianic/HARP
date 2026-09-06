@@ -116,7 +116,7 @@ It is one mechanism for creating structured evidence that can feed a broader rea
 
 HARP v0.1 evaluates eight competency areas:
 
-| ID | Competency |
+| **ID** | **Competency** |
 | --- | --- |
 | HARP-01 | System Fundamentals |
 | HARP-02 | Situational Awareness |
@@ -135,7 +135,7 @@ The model is designed to demonstrate how individual scenario performance could c
 
 HARP v0.1 uses a fictional Autonomous Operations Center and ten synthetic Remote Assistance scenarios:
 
-| Scenario | Event |
+| **Scenario** | **Event** |
 | --- | --- |
 | RA-001 | Ambiguous Construction Flagger |
 | RA-002 | Emergency Vehicle Approach |
@@ -228,11 +228,87 @@ A shift can contain enough formally qualified people while still having weak cur
 
 ---
 
+## Human-Autonomy Exchange (HAX)
+
+HARP addresses whether current evidence supports that a human is ready to perform a required competency.
+
+That creates a second operational question:
+
+> **When an autonomous system requires human support, how should the system determine which human to engage, what authority that person should receive, and when the system should return to autonomous operation?**
+
+HARP refers to this proposed interaction layer as the **Human-Autonomy Exchange (HAX)**.
+
+HAX extends the readiness concept by connecting an autonomous-system exception to the competency, readiness, availability, workload, and authority of the humans capable of responding.
+
+Conceptually:
+
+```mermaid
+flowchart TD
+    A["Autonomous System"] --> B{"Human Support Required?"}
+
+    B -->|No| A
+    B -->|Yes| C["Classify Operational Exception"]
+
+    C --> D["Determine Required Competency"]
+    D --> E["HARP Readiness Check"]
+
+    E --> F{"Ready Operator Available?"}
+
+    F -->|No| G["Fallback / Safe-State Logic"]
+    F -->|Yes| H["Select Appropriate Operator"]
+
+    H --> I["Check Workload and Intervention Capacity"]
+
+    I --> J{"Capacity Available?"}
+
+    J -->|No| G
+    J -->|Yes| K["Define Human Authority Envelope"]
+
+    K --> L["Human Support / Intervention"]
+    L --> M["Validate Outcome"]
+    M --> N["Return to Autonomous Operation"]
+    N --> O["Capture Performance Evidence"]
+    O --> E
+```
+
+### HAX Decision Model
+
+The proposed HAX layer explores six related decisions:
+
+| **Function** | **Operational Question** |
+| --- | --- |
+| Exception Classification | What happened, and does it require human support? |
+| Competency Matching | What competency is required to address the event? |
+| Readiness Verification | Is there current evidence that an available operator can perform that competency? |
+| Operator Selection | Which ready operator is best positioned to receive the event? |
+| Authority Management | What actions should that operator be permitted to take? |
+| Return-to-Autonomy | When and under what conditions should autonomous operation resume? |
+
+### Human Intervention Capacity
+
+HAX also introduces the concept of **Human Intervention Capacity**.
+
+An autonomous operation may have enough formally qualified personnel while still lacking sufficient human capacity to safely absorb multiple simultaneous exceptions.
+
+This creates another distinction:
+
+> **Qualified staffing ≠ Available intervention capacity**
+
+For example, an operator may be qualified and supported by strong readiness evidence while already managing another high-demand event. HAX would therefore treat readiness as one input into intervention assignment rather than assuming that every ready operator is immediately available.
+
+Conceptually:
+
+**Autonomous Exception → Required Competency → Ready Human → Available Capacity → Appropriate Authority → Intervention → Evidence**
+
+HAX is currently an **architectural concept within HARP**, not an implemented capability of the v0.1 prototype. Future development could explore event routing, operator workload, intervention capacity, authority boundaries, and multi-system supervision using entirely synthetic scenarios and data.
+
+---
+
 ## Architecture
 
 ```text
                  HUMAN-AUTONOMY READINESS PROTOCOL
-                                |
+                               |
         +-----------------------+-----------------------+
         |                       |                       |
   SCENARIO ENGINE        READINESS ENGINE        QUALIFICATION
@@ -243,20 +319,20 @@ A shift can contain enough formally qualified people while still having weak cur
         |                 Coverage
         +-----------+-----------+-----------------------+
                     |
-              OPERATOR PROFILE
+               OPERATOR PROFILE
                     |
-          +---------+---------+
-          |                   |
-   INDIVIDUAL READINESS   ORGANIZATIONAL READINESS
+           +---------+---------+
+           |                   |
+    INDIVIDUAL READINESS   ORGANIZATIONAL READINESS
                               |
-                        Competency Heatmap
-                        Coverage Requirements
-                        Requalification Queue
-                        Training Priorities
-                        Mission Readiness
+                         Competency Heatmap
+                         Coverage Requirements
+                         Requalification Queue
+                         Training Priorities
+                         Mission Readiness
 ```
 
-More detail is available in [`docs/architecture.md`](docs/architecture.md).
+More detail is available in [`docs/architecture.md`](https://github.com/sorianic/HARP/blob/main/docs/architecture.md).
 
 ---
 
@@ -372,9 +448,9 @@ HARP is not sponsored by, endorsed by, affiliated with, or developed on behalf o
 
 See:
 
-- [`INDEPENDENCE.md`](INDEPENDENCE.md)
-- [`DISCLAIMER.md`](DISCLAIMER.md)
-- [`LICENSE`](LICENSE)
+- [`INDEPENDENCE.md`](https://github.com/sorianic/HARP/blob/main/INDEPENDENCE.md)
+- [`DISCLAIMER.md`](https://github.com/sorianic/HARP/blob/main/DISCLAIMER.md)
+- [`LICENSE`](https://github.com/sorianic/HARP/blob/main/LICENSE)
 
 ---
 
@@ -394,10 +470,10 @@ No HARP output should be used for real-world safety, qualification, staffing, ce
 
 Additional project documentation:
 
-- [`HARP Concept Paper`](docs/HARP_CONCEPT_PAPER.md)
-- [`System Architecture`](docs/architecture.md)
-- [`60-Second Recruiter Walkthrough`](docs/RECRUITER_WALKTHROUGH.md)
-- [`Release Notes`](RELEASE_NOTES_v0.1.md)
+- [`HARP Concept Paper`](https://github.com/sorianic/HARP/blob/main/docs/HARP_CONCEPT_PAPER.md)
+- [`System Architecture`](https://github.com/sorianic/HARP/blob/main/docs/architecture.md)
+- [`60-Second Recruiter Walkthrough`](https://github.com/sorianic/HARP/blob/main/docs/RECRUITER_WALKTHROUGH.md)
+- [`Release Notes`](https://github.com/sorianic/HARP/blob/main/RELEASE_NOTES_v0.1.md)
 
 ---
 
