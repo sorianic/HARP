@@ -470,7 +470,6 @@ No HARP output should be used for real-world safety, qualification, staffing, ce
 
 Additional project documentation:
 
-- [`HARP Concept Paper`](https://github.com/sorianic/HARP/blob/main/docs/HARP_CONCEPT_PAPER.md)
 - [`System Architecture`](https://github.com/sorianic/HARP/blob/main/docs/architecture.md)
 - [`Release Notes`](https://github.com/sorianic/HARP/blob/main/RELEASE_NOTES_v0.1.md)
 
