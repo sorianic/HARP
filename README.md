@@ -472,7 +472,6 @@ Additional project documentation:
 
 - [`HARP Concept Paper`](https://github.com/sorianic/HARP/blob/main/docs/HARP_CONCEPT_PAPER.md)
 - [`System Architecture`](https://github.com/sorianic/HARP/blob/main/docs/architecture.md)
-- [`60-Second Recruiter Walkthrough`](https://github.com/sorianic/HARP/blob/main/docs/RECRUITER_WALKTHROUGH.md)
 - [`Release Notes`](https://github.com/sorianic/HARP/blob/main/RELEASE_NOTES_v0.1.md)
 
 ---
